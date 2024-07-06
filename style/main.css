@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Underdog&display=swap"
+);
+
+#header{
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+    border-bottom: 2px solid silver;
+    transition: opacity 0.3s ease-in-out; /* Анимация изменения прозрачности */
+    opacity: 1; /* Начальная прозрачность */
+}
+
+.nav-item a{
+    color: white;
+    background-color: black;
+    font-family: "Underdog";
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.navbar-brand{
+    color: white;
+    background-color: black;
+    font-family: "Underdog";
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#logo{
+    transform: translate(15px, 0);
+}
+
+
+#main{
+    color: white;
+    background-color: black;
+    font-family: "Underdog";
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color:black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.navbar-toggler-icon{
+    background-color: rgb(224, 224, 224);
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.bk {
+    background-image:url('../image/bk3.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: 100vh;
+    width: 100vw;
+    border: 8px solid black
+}
+
+@media(max-width: 400px){
+    #main{
+        font-size: 18px;
+    }
+    #logo{
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+
+@media(max-width: 1500px){
+    .bk{
+        background-position: right center;
+    }
+}
+
+@media (max-width: 550px){
+    .bk{
+        background-position: right 4% center;
+    }
+}
+
+main {
+    padding-top: 65px; /* Высота вашего header */
+}
+
+.grid{
+    padding-top: 60px;
+    color:white;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.text{
+    font-size: calc(17px + 5 *(100vw/1920)); /*22*/ 
+    font-weight: 600;
+}
+
+.zag{
+    font-size:calc(40px + 10 *(100vw/1920));
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttonSVO{
+    display: inline-flex; /* Используем Flexbox для выравнивания */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    padding: 15px 30px; /* Отступы вокруг текста */
+    background-color: transparent; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: 3px solid white;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    font-size: 16px; /* Размер шрифта текста кнопки */
+    cursor: pointer; /* Изменяем курсор на указатель при наведении */
+}
+
+#buttonSVO:hover{
+    background: #e0e0e0;
+    color: black;
+    transition: 0.3s;
+}
+
+.polk{
+    font-family: Underdog;
+    font-size: calc(25px + 5 *(100vw/1920));
+    font-weight: 600;
+}
+
+#C2{
+    color: white;
+    padding-top: 30px;
+}
+
+.carousel-item{
+    transform: translateX(5%);
+}
+
+.carousel-control-prev{
+    transform: translateX(-4em);
+}
+
+.carousel-control-next{
+    right: 61%;
+}
